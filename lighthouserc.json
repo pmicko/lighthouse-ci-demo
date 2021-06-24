@@ -5,7 +5,7 @@
     },
     "assert": {
       "assertions": {
-        "first-contentful-paint": ["error", { "maxNumericValue": 1000 }]
+        "first-contentful-paint": ["warn", { "maxNumericValue": 1000 }]
       }
     }
   }
