@@ -12,22 +12,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      - name: Setup node
-        uses: actions/setup-node@v1
-        with:
+    - name: Setup node
+      uses: actions/setup-node@v1
+      with:
           node-version: '12.x'
 
-      - name: Install dependencies
-        run: npm install
+    - name: Install dependencies
+      run: npm install
 
-      - name: Create build
-      - run: npm run build
+    - name: Create build
+      run: npm run build
       
-      - name: Run tests
-      - run: npm run test
+    - name: Run tests
+      run: npm run test
       
-      - name: Deploy app
-      - run: npm run deploy
+    - name: Deploy app
+      run: npm run deploy
+      
