@@ -9,10 +9,11 @@ on:
 jobs:
   lighthouseCI:
     name: Lighthouse Audit
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     env:
       FRONTEND_URL: https://salsitasoft.com
     steps:
+      - uses: actions/checkout@v2
       - name: Warmup curl ${{ env.FRONTEND_URL }}
         run: |
           curl -I ${{ env.FRONTEND_URL }}
