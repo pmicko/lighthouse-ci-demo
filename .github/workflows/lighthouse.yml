@@ -1,0 +1,29 @@
+name: Test
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  lighthouseCI:
+    name: Lighthouse CI
+    runs-on: ubuntu-20.04
+    env:
+      FRONTEND_URL: salsitasoft.com
+    steps:
+      - name: Warmup curl ${{ env.FRONTEND_URL }}
+        run: |
+          curl -I ${{ env.FRONTEND_URL }}
+          curl -v ${{ env.FRONTEND_URL }}/version.txt
+      - name: Audit using Lighthouse
+        uses: treosh/lighthouse-ci-action@v2
+        with:
+          urls: |
+            ${{ env.FRONTEND_URL }}
+      - name: Save Lighthouse results
+        uses: actions/upload-artifact@v1
+        with:
+          name: lighthouse-results
+          path: '.lighthouseci' # This will save the Lighthouse results as .json files
