@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/%7Brepo-name%7D/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/%7Brepo-name%7D/static/js/main.eeeac8f1.chunk.js",
-    "main.js.map": "/%7Brepo-name%7D/static/js/main.eeeac8f1.chunk.js.map",
-    "runtime-main.js": "/%7Brepo-name%7D/static/js/runtime-main.fb438429.js",
-    "runtime-main.js.map": "/%7Brepo-name%7D/static/js/runtime-main.fb438429.js.map",
-    "static/js/2.e2df03c4.chunk.js": "/%7Brepo-name%7D/static/js/2.e2df03c4.chunk.js",
-    "static/js/2.e2df03c4.chunk.js.map": "/%7Brepo-name%7D/static/js/2.e2df03c4.chunk.js.map",
-    "static/js/3.043798eb.chunk.js": "/%7Brepo-name%7D/static/js/3.043798eb.chunk.js",
-    "static/js/3.043798eb.chunk.js.map": "/%7Brepo-name%7D/static/js/3.043798eb.chunk.js.map",
-    "index.html": "/%7Brepo-name%7D/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/%7Brepo-name%7D/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.e2df03c4.chunk.js.LICENSE.txt": "/%7Brepo-name%7D/static/js/2.e2df03c4.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/%7Brepo-name%7D/static/media/logo.6ce24c58.svg"
+    "main.css": "/demo-app/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/demo-app/static/js/main.d4bef3c0.chunk.js",
+    "main.js.map": "/demo-app/static/js/main.d4bef3c0.chunk.js.map",
+    "runtime-main.js": "/demo-app/static/js/runtime-main.6cd2d37e.js",
+    "runtime-main.js.map": "/demo-app/static/js/runtime-main.6cd2d37e.js.map",
+    "static/js/2.473439df.chunk.js": "/demo-app/static/js/2.473439df.chunk.js",
+    "static/js/2.473439df.chunk.js.map": "/demo-app/static/js/2.473439df.chunk.js.map",
+    "static/js/3.3a9cff0b.chunk.js": "/demo-app/static/js/3.3a9cff0b.chunk.js",
+    "static/js/3.3a9cff0b.chunk.js.map": "/demo-app/static/js/3.3a9cff0b.chunk.js.map",
+    "index.html": "/demo-app/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/demo-app/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.473439df.chunk.js.LICENSE.txt": "/demo-app/static/js/2.473439df.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/demo-app/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.fb438429.js",
-    "static/js/2.e2df03c4.chunk.js",
+    "static/js/runtime-main.6cd2d37e.js",
+    "static/js/2.473439df.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.eeeac8f1.chunk.js"
+    "static/js/main.d4bef3c0.chunk.js"
   ]
 }
