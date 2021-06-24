@@ -18,7 +18,7 @@ jobs:
           curl -I ${{ env.FRONTEND_URL }}
           curl -v ${{ env.FRONTEND_URL }}/version.txt
       - name: Audit using Lighthouse
-        uses: treosh/lighthouse-ci-action@v2
+        uses: treosh/lighthouse-ci-action@v3
         with:
           urls: |
             ${{ env.FRONTEND_URL }}
