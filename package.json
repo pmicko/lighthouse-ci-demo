@@ -1,6 +1,6 @@
 {
-  "homepage": "https://{username}.github.io/{repo-name}",
-  "name": "arrow-app",
+  "homepage": "https://pmicko.github.io/demo-app",
+  "name": "demo-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
