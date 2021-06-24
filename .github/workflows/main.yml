@@ -55,3 +55,26 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
+
+  lighthouseCI:
+    name: Lighhouse Assert
+    runs-on: ubuntu-latest
+    env:
+      FRONTEND_URL: https://pmicko.github.io/demo-app/
+    steps:
+      - uses: actions/checkout@v2
+      - name: Warmup curl ${{ env.FRONTEND_URL }}
+        run: |
+          curl -I ${{ env.FRONTEND_URL }}
+          curl -v ${{ env.FRONTEND_URL }}/version.txt
+      - name: Assert Performance using Lighthouse
+        uses: treosh/lighthouse-ci-action@v3
+        with:
+          urls: |
+            ${{ env.FRONTEND_URL }}
+          configPath: './lighthouserc.json'
+      - name: Save Lighthouse results
+        uses: actions/upload-artifact@v1
+        with:
+          name: lighthouse-results
+          path: '.lighthouseci' # This will save the Lighthouse results as .json files
