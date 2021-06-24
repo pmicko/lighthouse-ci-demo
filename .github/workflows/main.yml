@@ -58,6 +58,7 @@ jobs:
 
   lighthouseCI:
     name: Lighhouse Assert
+    needs: deploy
     runs-on: ubuntu-latest
     env:
       FRONTEND_URL: https://pmicko.github.io/demo-app/
