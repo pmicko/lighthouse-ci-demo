@@ -11,7 +11,7 @@ jobs:
     name: Lighthouse CI
     runs-on: ubuntu-20.04
     env:
-      FRONTEND_URL: salsitasoft.com
+      FRONTEND_URL: https://salsitasoft.com
     steps:
       - name: Warmup curl ${{ env.FRONTEND_URL }}
         run: |
