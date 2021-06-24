@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/%7Brepo-name%7D/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/%7Brepo-name%7D/static/js/main.eeeac8f1.chunk.js",
+    "main.js.map": "/%7Brepo-name%7D/static/js/main.eeeac8f1.chunk.js.map",
+    "runtime-main.js": "/%7Brepo-name%7D/static/js/runtime-main.fb438429.js",
+    "runtime-main.js.map": "/%7Brepo-name%7D/static/js/runtime-main.fb438429.js.map",
+    "static/js/2.e2df03c4.chunk.js": "/%7Brepo-name%7D/static/js/2.e2df03c4.chunk.js",
+    "static/js/2.e2df03c4.chunk.js.map": "/%7Brepo-name%7D/static/js/2.e2df03c4.chunk.js.map",
+    "static/js/3.043798eb.chunk.js": "/%7Brepo-name%7D/static/js/3.043798eb.chunk.js",
+    "static/js/3.043798eb.chunk.js.map": "/%7Brepo-name%7D/static/js/3.043798eb.chunk.js.map",
+    "index.html": "/%7Brepo-name%7D/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/%7Brepo-name%7D/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.e2df03c4.chunk.js.LICENSE.txt": "/%7Brepo-name%7D/static/js/2.e2df03c4.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/%7Brepo-name%7D/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fb438429.js",
+    "static/js/2.e2df03c4.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.eeeac8f1.chunk.js"
+  ]
+}
