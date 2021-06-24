@@ -22,6 +22,8 @@ jobs:
         with:
           urls: |
             ${{ env.FRONTEND_URL }}
+            ${{ env.FRONTEND_URL }}/work
+            ${{ env.FRONTEND_URL }}/about
       - name: Save Lighthouse results
         uses: actions/upload-artifact@v1
         with:
