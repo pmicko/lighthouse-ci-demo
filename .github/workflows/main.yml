@@ -1,4 +1,4 @@
-name: Build & deploy
+name: CI
 
 on:
   push:
@@ -63,8 +63,7 @@ jobs:
     env:
       FRONTEND_URL: https://pmicko.github.io/demo-app/
     steps:
-      - uses: actions/checkout@v2
-      - name: Warmup curl ${{ env.FRONTEND_URL }}
+      - name: Warmup curl 
         run: |
           curl -I ${{ env.FRONTEND_URL }}
           curl -v ${{ env.FRONTEND_URL }}/version.txt
