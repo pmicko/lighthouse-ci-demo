@@ -58,6 +58,7 @@ jobs:
 
   lighthouse:
     name: Lighthouse Audit
+    needs: build
     runs-on: ubuntu-latest
     env:
       FRONTEND_URL: https://pmicko.github.io/demo-app/
@@ -67,6 +68,6 @@ jobs:
         uses: treosh/lighthouse-ci-action@v7
         with:
           urls: |
-            ${{ env.FRONENT_URL }}
+            ${{ env.FRONTEND_URL }}
           uploadArtifacts: true # save results as an action artifacts
           temporaryPublicStorage: true # upload lighthouse report to the temporary storage
