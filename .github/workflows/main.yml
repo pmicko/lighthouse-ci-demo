@@ -1,4 +1,4 @@
-name: Build & Deploy
+name: CI
 
 on:
   push:
@@ -56,19 +56,18 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
 
-#  lighthouse:
-#    name: Lighthouse Audit
-#    needs: deploy
-#    runs-on: ubuntu-latest
-#    env:
-#      FRONTEND_URL: https://pmicko.github.io/demo-app/
-#    steps:
-#      - uses: actions/checkout@v2
-#      - name: Audit URLs using Lighthouse
-#        uses: treosh/lighthouse-ci-action@v7
-#        with:
-#          urls: |
-#            ${{ env.FRONTEND_URL }}
-#          uploadArtifacts: true
-#          configPath: ./lighthouserc.json
-
+  lighthouse:
+    name: Lighthouse
+    needs: deploy
+    runs-on: ubuntu-latest
+    env:
+      FRONTEND_URL: https://pmicko.github.io/demo-app/
+    steps:
+      - uses: actions/checkout@v2
+      - name: Audit and test performance
+        uses: treosh/lighthouse-ci-action@v7
+        with:
+          urls: |
+            ${{ env.FRONTEND_URL }}
+          uploadArtifacts: true
+          configPath: ./lighthouserc.json
