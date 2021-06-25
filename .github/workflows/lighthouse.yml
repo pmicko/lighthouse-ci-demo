@@ -1,0 +1,27 @@
+name: Lighthouse CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_run:
+    workflows: [ "Build & Deploy" ]
+    types: [ completed ]
+
+jobs:
+  lighthouse:
+    name: Test Web Performance
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    env:
+      FRONTEND_URL: https://pmicko.github.io/demo-app/
+    steps:
+      - uses: actions/checkout@v2
+      - name: Audit app and test performance
+        uses: treosh/lighthouse-ci-action@v7
+        with:
+          urls: |
+            ${{ env.FRONTEND_URL }}
+          uploadArtifacts: true
+          configPath: ./lighthouserc.json
