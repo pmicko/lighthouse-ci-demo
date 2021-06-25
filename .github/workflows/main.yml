@@ -1,4 +1,4 @@
-name: Build & Deploy
+name: CI
 
 on:
   push:
@@ -57,7 +57,7 @@ jobs:
         publish_dir: ./build
 
   lighthouse:
-    name: Lighthouse
+    name: Run Lighthouse
     needs: deploy
     runs-on: ubuntu-latest
     env:
