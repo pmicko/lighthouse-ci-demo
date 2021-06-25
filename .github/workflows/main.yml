@@ -58,7 +58,7 @@ jobs:
 
   lighthouse:
     name: Lighthouse Audit
-    needs: build
+    needs: deploy
     runs-on: ubuntu-latest
     env:
       FRONTEND_URL: https://pmicko.github.io/demo-app/
@@ -70,4 +70,5 @@ jobs:
           urls: |
             ${{ env.FRONTEND_URL }}
           uploadArtifacts: true
+          configPath: ./lighthouserc.json
 
