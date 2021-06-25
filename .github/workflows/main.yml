@@ -1,4 +1,4 @@
-name: CI
+name: Build & Deploy
 
 on:
   push:
@@ -71,3 +71,4 @@ jobs:
             ${{ env.FRONTEND_URL }}
           uploadArtifacts: true
           configPath: ./lighthouserc.json
+
