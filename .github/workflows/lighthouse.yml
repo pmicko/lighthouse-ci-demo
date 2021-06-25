@@ -1,0 +1,30 @@
+name: LICI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  lighthouse:
+    name: Lighthouse Assert
+    needs: deploy
+    runs-on: ubuntu-latest
+    env:
+      FRONTEND_URL: https://www.salsitasoft.com/
+    steps:
+      - uses: actions/checkout@v2
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v7
+        with:
+          urls: |
+            ${{ env.FRONTEND_URL }}
+            ${{ env.FRONTEND_URL }}/about
+            ${{ env.FRONTEND_URL }}/work
+          uploadArtifacts: true
+          configPath: ./lighthouserc.json
+
+
