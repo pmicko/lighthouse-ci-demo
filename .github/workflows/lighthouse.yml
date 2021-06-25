@@ -11,14 +11,14 @@ on:
 
 jobs:
   lighthouse:
-    name: Lighthouse Test Web Performance
+    name: Test Web Performance
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     env:
       FRONTEND_URL: https://pmicko.github.io/demo-app/
     steps:
       - uses: actions/checkout@v2
-      - name: Audit URLs using Lighthouse
+      - name: Audit app and test performance
         uses: treosh/lighthouse-ci-action@v7
         with:
           urls: |
