@@ -1,0 +1,73 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Install dependenices
+        run: npm ci
+
+      - name: Create build
+        run: npm run build
+
+      - name: Run tests
+        run: npm run test
+
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v2
+        with:
+          name: production-files
+          path: ./build
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    # if: github.ref == 'refs/heads/master'
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: production-files
+          path: ./build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+
+  lighthouse:
+    name: Run Lighthouse
+    needs: deploy
+    runs-on: ubuntu-latest
+    env:
+      FRONTEND_URL: https://pmicko.github.io/demo-app/
+    steps:
+      - uses: actions/checkout@v2
+      - name: Audit and test performance
+        uses: treosh/lighthouse-ci-action@v7
+        with:
+          urls: |
+            ${{ env.FRONTEND_URL }}
+          uploadArtifacts: true
+          configPath: ./lighthouserc.json
