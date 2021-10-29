@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/demo-app/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/demo-app/static/js/main.db5a4c48.chunk.js",
-    "main.js.map": "/demo-app/static/js/main.db5a4c48.chunk.js.map",
-    "runtime-main.js": "/demo-app/static/js/runtime-main.6cd2d37e.js",
-    "runtime-main.js.map": "/demo-app/static/js/runtime-main.6cd2d37e.js.map",
-    "static/js/2.473439df.chunk.js": "/demo-app/static/js/2.473439df.chunk.js",
-    "static/js/2.473439df.chunk.js.map": "/demo-app/static/js/2.473439df.chunk.js.map",
-    "static/js/3.3a9cff0b.chunk.js": "/demo-app/static/js/3.3a9cff0b.chunk.js",
-    "static/js/3.3a9cff0b.chunk.js.map": "/demo-app/static/js/3.3a9cff0b.chunk.js.map",
-    "index.html": "/demo-app/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/demo-app/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.473439df.chunk.js.LICENSE.txt": "/demo-app/static/js/2.473439df.chunk.js.LICENSE.txt",
-    "static/media/chili-pepper.a03060c6.svg": "/demo-app/static/media/chili-pepper.a03060c6.svg"
+    "main.css": "/lighthouse-ci-demo/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/lighthouse-ci-demo/static/js/main.db5a4c48.chunk.js",
+    "main.js.map": "/lighthouse-ci-demo/static/js/main.db5a4c48.chunk.js.map",
+    "runtime-main.js": "/lighthouse-ci-demo/static/js/runtime-main.a176b3fe.js",
+    "runtime-main.js.map": "/lighthouse-ci-demo/static/js/runtime-main.a176b3fe.js.map",
+    "static/js/2.473439df.chunk.js": "/lighthouse-ci-demo/static/js/2.473439df.chunk.js",
+    "static/js/2.473439df.chunk.js.map": "/lighthouse-ci-demo/static/js/2.473439df.chunk.js.map",
+    "static/js/3.3a9cff0b.chunk.js": "/lighthouse-ci-demo/static/js/3.3a9cff0b.chunk.js",
+    "static/js/3.3a9cff0b.chunk.js.map": "/lighthouse-ci-demo/static/js/3.3a9cff0b.chunk.js.map",
+    "index.html": "/lighthouse-ci-demo/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/lighthouse-ci-demo/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.473439df.chunk.js.LICENSE.txt": "/lighthouse-ci-demo/static/js/2.473439df.chunk.js.LICENSE.txt",
+    "static/media/chili-pepper.a03060c6.svg": "/lighthouse-ci-demo/static/media/chili-pepper.a03060c6.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6cd2d37e.js",
+    "static/js/runtime-main.a176b3fe.js",
     "static/js/2.473439df.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
     "static/js/main.db5a4c48.chunk.js"
