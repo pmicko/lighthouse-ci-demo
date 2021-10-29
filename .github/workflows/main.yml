@@ -61,7 +61,7 @@ jobs:
     needs: deploy
     runs-on: ubuntu-latest
     env:
-      FRONTEND_URL: https://pmicko.github.io/demo-app/
+      FRONTEND_URL: https://pmicko.github.io/lighthouse-ci-demo/
     steps:
       - uses: actions/checkout@v2
       - name: Audit and test performance
