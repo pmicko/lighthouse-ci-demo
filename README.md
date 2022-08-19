@@ -1,4 +1,5 @@
 # Lighthouse CI Demo
+![](https://img.shields.io/github/workflow/status/pmicko/lighthouse-ci-demo/CI?label=lighthouse)
 
 ## 🤔 What is it
 Companion repo for my demo of [Lighthouse CI](https://github.com/treosh/lighthouse-ci-action) running on Github Actions environment.
